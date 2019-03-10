@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="tra">
+<input type="button" value="Translate" onclick="Dich()">
+<script>
+    let vi = ["An Sang", "An Trua", "An Toi"];
+    let en = ["Breakfast", "Lunch", "Dinner"];
+
+    function Dich() {
+        let a = document.getElementById("tra").value;
+        for ( i = 0; i < en.length; i++) {
+            if (a === en[i]) {
+                alert(vi[i]);
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
